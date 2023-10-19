@@ -3,7 +3,7 @@ export class Colour {
     #g = 0;
     #b = 0;
 
-    constructor(r, g, b) {
+    constructor(r=0, g=0, b=0) {
         this.#r = r;
         this.#g = g;
         this.#b = b;
@@ -18,7 +18,7 @@ export class Colour {
     get html() { return `rgb(${this.r}), ${this.g}, ${this.b}`; }
 
     static White = new Colour(255, 255, 255);
-    static Black = new Colour(0, 0, 0);
+    static Black = new Colour();
     static Red = new Colour(255, 0, 0);
     static Green = new Colour(0, 255, 0);
     static Blue = new Colour(0, 0, 255);
